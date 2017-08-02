@@ -43,7 +43,7 @@
     "lint": "eslint .",
     "test": "mocha -R spec -t 80000 test/*.js",
     "cov": "nyc -r json -r lcov -r text-summary npm test",
-    "ci": "npm run lint && npm run cov"
+    "ci": "npm run lint && DEBUG=* npm run cov"
   },
   "files": [
     "index.js",
